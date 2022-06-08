@@ -205,6 +205,10 @@
             </li>
             <li class="nav-item" data-level="2"><a href="#running-docker" class="nav-link">Running Docker</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="3"><a href="#linting" class="nav-link">Linting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#frequently-asked-questions" class="nav-link">Frequently Asked Questions</a>
@@ -267,6 +271,15 @@ The macOS version of git involves downloading extra programs, such as Homebrew. 
 </ul>
 </details>
 <p><br></p>
+<h3 id="linting">Linting</h3>
+<p>Executing <code>docker compose build</code> following the instructions above also creates a docker image called <code>linter</code> that can be used to run various linters/formatters against the source code. The <a href="https://pre-commit.com/">pre-commit</a> is used to manage the linters/formatters, and the configurations for it can be found at: <code>CivicTechJobs/.pre-commit-config.yaml</code></p>
+<p>To run the linters/formatters:
+1. Copy the existing <code>CivicTechJobs/dev/linter.env.example</code> and create a new file called <code>CivicTechJobs/dev/linter.env</code>
+2. Fill out all the lines following the instructions in the example doc and save the <code>linter.env</code> file
+3. Run the linter/formatters using the following command:
+* <code>docker compose --env-file=./dev/linter.env run linter</code> --&gt; runs the linters/formatters against the files staged for commit via <code>git add &lt;file&gt;</code>
+* <code>docker compose --env-file=./dev/linter.env run linter run --all-files</code> --&gt; runs the linters/formatters across all non-excluded files in this repository</p>
+<p><em>Note</em>: The linter does not yet incorporate with <a href="https://github.com/hadolint/hadolint">hadolint</a>, a Dockerfile linter. To run hadolint locally, easiest way is via: <code>docker run --rm --interactive docker.io/hadolint/hadolint &lt; Dockerfile</code></p>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 <p>This section might answer some of the burning questions you have. If you cannot find it here, be sure to contact our team members or the development lead through our <a href="https://hackforla.slack.com/archives/C02509WHFQQ">Slack</a> or <a href="mailto:Civictechjobs@hackforla.org">email</a>.</p>
 <h3 id="troubleshooting-errors">Troubleshooting Errors</h3>

@@ -501,7 +501,7 @@
 <h6 id="note-there-is-one-caveat-to-that-as-some-components-come-with-their-own-default-for-example-buttons-take-a-size-prop-in-which-you-declare-a-default-already-therefore-when-using-the-responsive-mixin-for-button-size-there-is-no-need-to-declare-a-top-level-default-in-the-scss-code"><em>*Note: There is one caveat to that as some components come with their own default. For example, buttons take a size prop, in which you declare a default already. Therefore when using the responsive mixin for button size, there is no need to declare a top level default in the scss code.</em></h6>
 </blockquote>
 <h3 id="svgs-as-components-and-as-data-urls">SVGs as Components and as Data-URLs</h3>
-<p>SVG assets are read into our codebase as React components or data-urls.</p>
+<p>SVG assets are read into our codebase as React components (or inline SVG) or data-urls.</p>
 <p>As React components:</p>
 <ul>
 <li>specified with a starting uppercase</li>
@@ -533,7 +533,7 @@ import copIconOps from &quot;./svgs/cop-icon-ops.svg?url&quot;;
 import copIconProduct from &quot;./svgs/cop-icon-product.svg?url&quot;;
 import copIconUiux from &quot;./svgs/cop-icon-uiux.svg?url&quot;;
 </code></pre>
-<p><em><p style="text-align: center;">The top icons are imported from the image file as SVG components. The bottom icons are the same file imported as data-urls. Notice how the latter import file adds "?url".</p></em></p>
+<p><em><p style="text-align: center;">The top icons are imported from the image file as SVG components (or inline SVG). The bottom icons are the same file imported as data-urls. Notice how the latter import file adds "?url".</p></em></p>
 <p>When using our SVG assets make sure to use the best import for the job. In some cases, however, neither of these imports are optimal to use. For example the SVG itself might be incorrectly formatted.</p>
 <p><img src="../../assets/logo-horizontal.svg" width="600" /></p>
 <p><em><p style="text-align: center;">This SVG contains extra spaces, especially on the bottom. This image is impossible to center correctly without adding unnecessary margins.</p></em></p>
