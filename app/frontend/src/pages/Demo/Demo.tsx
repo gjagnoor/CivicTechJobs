@@ -7,6 +7,7 @@ import { Checkbox, Chip, TextField } from "components/components";
 import { IconEyeClose, IconEyeOpen, IconSearch } from "assets/images/images";
 import ChevronScroll from "components/ChevronScroll/ChevronScroll";
 import Item from "components/ChevronScroll/Item";
+import { nanoid } from "nanoid";
 
 function Demo() {
   function textFieldOnChange(e: React.ChangeEvent<HTMLInputElement>) {
@@ -26,8 +27,9 @@ function Demo() {
         </h1>
         <div>
           <ChevronScroll>
-            <Item text={"Experience Level"} />
-            <Item text={"Hello World"} />
+            <Item text={"Experience Level"} id={nanoid()} />
+            <Item text={"Hello World"} id={nanoid()} />
+            <Item text={"test"} id={nanoid()} />
           </ChevronScroll>
         </div>
 

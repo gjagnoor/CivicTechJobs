@@ -50,6 +50,7 @@
     "@popperjs/core": "^2.11.5",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
+    "nanoid": "^4.0.1",
     "react-popper": "^2.3.0"
   }
 }

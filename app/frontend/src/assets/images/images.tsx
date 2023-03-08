@@ -44,7 +44,7 @@ import iconSearch from "./svgs/icons/icon-search.svg?url";
 import iconX from "./svgs/icons/icon-x.svg?url";
 import iconChevronLeft from "./svgs/icons/icon-chevron-left.svg?url";
 import IconChevronDown from "./svgs/icons/icon-chevron-down.svg?url";
-
+import IconChevronRight from "./svgs/icons/icon-chevron-right.svg?url";
 // Group Background Image
 import landingPageFg from "./svgs/landing-page-fg.svg?url";
 import landingPageBg from "./svgs/landing-page-bg.svg?url";
@@ -202,6 +202,7 @@ export {
   iconSearch,
   iconX,
   IconChevronDown,
+  IconChevronRight,
   // CTJ Logos
   LogoHorizontal,
   LogoHorizontalOnDark,
