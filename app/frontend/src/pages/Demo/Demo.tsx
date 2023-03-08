@@ -6,6 +6,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Checkbox, Chip, TextField } from "components/components";
 import { IconEyeClose, IconEyeOpen, IconSearch } from "assets/images/images";
 import ChevronScroll from "components/ChevronScroll/ChevronScroll";
+import Item from "components/ChevronScroll/Item";
 
 function Demo() {
   function textFieldOnChange(e: React.ChangeEvent<HTMLInputElement>) {
@@ -23,7 +24,13 @@ function Demo() {
         <h1>
           Hello World! Feel free to use this page as a playground to test code!
         </h1>
-        <ChevronScroll />
+        <div>
+          <ChevronScroll>
+            <Item text={"Experience Level"} />
+            <Item text={"Hello World"} />
+          </ChevronScroll>
+        </div>
+
         <div style={{ width: "720px" }}>
           <h2>Chips</h2>
           <div>

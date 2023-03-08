@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { iconChevronLeft } from "../../assets/images/images";
-import Item from "./Item";
+import "./_scroll.scss";
 
-function ChevronScroll({}) {
+interface ChevronScrollProps {
+  children: any;
+}
+
+function ChevronScroll({ children }: ChevronScrollProps) {
   return (
-    <div>
-      <Item text={"Experience Level"} />
+    <div className="scroll">
+      <div>
+        <img src={iconChevronLeft} className="chevronLeft" />
+      </div>
+      {children}
     </div>
   );
 }

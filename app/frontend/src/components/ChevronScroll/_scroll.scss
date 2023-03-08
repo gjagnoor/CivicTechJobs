@@ -1,0 +1,27 @@
+.scroll {
+  /* Frame 1006 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 1088px;
+  height: 47px;
+  left: 176px;
+  top: 144px;
+}
+
+.chevronLeft {
+  /* Vector 232 */
+
+  //   position: absolute;
+  left: 37.5%;
+  right: 41.67%;
+  top: 29.17%;
+  bottom: 29.17%;
+}
