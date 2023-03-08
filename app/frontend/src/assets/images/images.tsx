@@ -42,6 +42,8 @@ import iconHamburgerMenu from "./svgs/icons/icon-hamburger-menu.svg?url";
 import iconPlus from "./svgs/icons/icon-plus.svg?url";
 import iconSearch from "./svgs/icons/icon-search.svg?url";
 import iconX from "./svgs/icons/icon-x.svg?url";
+import iconChevronLeft from "./svgs/icons/icon-chevron-left.svg?url";
+import IconChevronDown from "./svgs/icons/icon-chevron-down.svg?url";
 
 // Group Background Image
 import landingPageFg from "./svgs/landing-page-fg.svg?url";
@@ -72,7 +74,7 @@ interface defaultProps {
 
 function svgWrapper(
   Svg: React.ElementType,
-  defaultProps: defaultProps,
+  defaultProps: defaultProps
 ): React.ElementType {
   return (props) => {
     const titleId = useId();
@@ -93,27 +95,27 @@ function svgWrapper(
 /// COP Icons
 const CopIconData = svgWrapper(CopIconDataP, {
   title: "Data Science Community of Practice Logo",
-  desc: "icon representing the scatter plot and line graph",
+  desc: "icon representing the scatter plot and line graph"
 });
 
 const CopIconEngineering = svgWrapper(CopIconEngineeringP, {
   title: "Engineering Community of Practice Logo",
-  desc: "an engineering icon that represents the terminal",
+  desc: "an engineering icon that represents the terminal"
 });
 
 const CopIconOps = svgWrapper(CopIconOpsP, {
   title: "Ops Community of Practice Logo",
-  desc: "an operations icon that represents a running operation being managed",
+  desc: "an operations icon that represents a running operation being managed"
 });
 
 const CopIconProduct = svgWrapper(CopIconProductP, {
   title: "Product Management Community of Practice Logo",
-  desc: "a product icon that represents a team communicating with each other",
+  desc: "a product icon that represents a team communicating with each other"
 });
 
 const CopIconUiux = svgWrapper(CopIconUiuxP, {
   title: "UI/UX Community of Practice Logo",
-  desc: "an icon for uiux representing a variety of ideas",
+  desc: "an icon for uiux representing a variety of ideas"
 });
 
 // CTJ Logos
@@ -121,42 +123,42 @@ const ctjLogoTitle = "Civic Tech Jobs Logo";
 
 const LogoHorizontal = svgWrapper(LogoHorizontalP, {
   title: ctjLogoTitle,
-  desc: "civic tech jobs horizontal logo",
+  desc: "civic tech jobs horizontal logo"
 });
 
 const LogoHorizontalOnDark = svgWrapper(LogoHorizontalOnDarkP, {
   title: ctjLogoTitle,
-  desc: "civic tech jobs logo and icon horizontal - white text on a transparent background",
+  desc: "civic tech jobs logo and icon horizontal - white text on a transparent background"
 });
 
 const LogoMark = svgWrapper(LogoMarkP, {
   title: ctjLogoTitle,
-  desc: "civic tech jobs logomark",
+  desc: "civic tech jobs logomark"
 });
 
 const LogoStacked = svgWrapper(LogoStackedP, {
   title: ctjLogoTitle,
-  desc: "civic tech jobs logo and stacked platform name",
+  desc: "civic tech jobs logo and stacked platform name"
 });
 
 const LogoStackedOnDark = svgWrapper(LogoStackedOnDarkP, {
   title: ctjLogoTitle,
-  desc: "civic tech jobs logo and icon column wise - white text on a transparent background",
+  desc: "civic tech jobs logo and icon column wise - white text on a transparent background"
 });
 
 const LogoType = svgWrapper(LogoTypeP, {
   title: ctjLogoTitle,
-  desc: "civic tech jobs - the name of the platform typed out",
+  desc: "civic tech jobs - the name of the platform typed out"
 });
 
 const LogoVertical = svgWrapper(LogoVerticalP, {
   title: ctjLogoTitle,
-  desc: "logo and platform name - vertically aligned",
+  desc: "logo and platform name - vertically aligned"
 });
 
 const LogoWordmark = svgWrapper(LogoWordmarkP, {
   title: ctjLogoTitle,
-  desc: "platform name and logo with a word play",
+  desc: "platform name and logo with a word play"
 });
 
 export {
@@ -187,6 +189,7 @@ export {
   IconX,
   iconArrowDown,
   iconArrowLeft,
+  iconChevronLeft,
   iconCheckboxY,
   iconCheckboxN,
   iconCheckMark,
@@ -198,6 +201,7 @@ export {
   iconPlus,
   iconSearch,
   iconX,
+  IconChevronDown,
   // CTJ Logos
   LogoHorizontal,
   LogoHorizontalOnDark,
@@ -217,5 +221,5 @@ export {
   logoWordmark,
   // Group Background Image
   landingPageFg,
-  landingPageBg,
+  landingPageBg
 };

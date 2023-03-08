@@ -5,6 +5,7 @@ import React, { Fragment, useEffect, useState } from "react";
 // Internal Imports
 import { Checkbox, Chip, TextField } from "components/components";
 import { IconEyeClose, IconEyeOpen, IconSearch } from "assets/images/images";
+import ChevronScroll from "components/ChevronScroll/ChevronScroll";
 
 function Demo() {
   function textFieldOnChange(e: React.ChangeEvent<HTMLInputElement>) {
@@ -22,6 +23,7 @@ function Demo() {
         <h1>
           Hello World! Feel free to use this page as a playground to test code!
         </h1>
+        <ChevronScroll />
         <div style={{ width: "720px" }}>
           <h2>Chips</h2>
           <div>
@@ -100,7 +102,7 @@ function PasswordButton() {
       onClick={handleClick}
       style={{
         border: "none",
-        backgroundColor: "#fff",
+        backgroundColor: "#fff"
       }}
     >
       {isOpen ? <IconEyeOpen /> : <IconEyeClose />}
